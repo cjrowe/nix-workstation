@@ -39,7 +39,7 @@
       system = darwinSystem;
       modules = [
         ({ config, pkgs, ... }: { nixpkgs.config.allowUnfree = true; })
-        ./darwin-spw-configuration.nix
+        ./spw-laptop-configuration.nix
         home-manager.darwinModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
@@ -55,7 +55,7 @@
       system = darwinSystem;
       modules = [
         ({ config, pkgs, ... }: { nixpkgs.config.allowUnfree = true; })
-        ./darwin-family-configuration.nix
+        ./family-laptop-configuration.nix
         home-manager.darwinModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
