@@ -9,7 +9,7 @@
     nixvim.url = "github:nix-community/nixvim/nixos-23.05";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
     private-config = {
-      url = "github:cjrowe/nix-config-private";
+      url = "git+ssh://git@github.com/cjrowe/nix-config-private.git";
       flake = true;
     };
   };
